@@ -1,0 +1,19 @@
+#total_amount,#description,#email_ids,#add_new_bill,#email_id,#name,#add_new_friend
+  {
+  width: 400px;
+  margin-top: 25px;
+}
+
+#edit_bill_form,#edit_friend_form {
+  display: none;
+}
+
+#add_new_bill_form,#add_new_friend_form {
+  background-color: lightgreen;
+  width: 400px;
+}
+
+#edit_bill_form,#edit_friend_form {
+  background-color: lightyellow;
+  width: 400px;
+}

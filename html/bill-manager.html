@@ -1,0 +1,60 @@
+<!doctype>
+  <html lang="en">
+    <head>
+      <title>Bill Manager</title>
+      <link rel="stylesheet" type="text/css" href="../css/billManager.css">
+      <script type="text/javascript" src="../js/bill-manager.js"></script>
+    </head>
+
+    <body>
+      <h1>Bill Manager (using Local Storage):</h1>
+      <div class="action-buttons">
+        <div>
+          <button id="view_all_bills">View all bills</button>
+          <div>
+            <ol id="view_all_bills_container"></ol>
+          </div>
+
+          <button id="view_all_friends">View friends list</button>
+          <div>
+            <ol id="view_all_friends_container"></ol>
+          </div>
+        </div>
+      </div>
+
+      <div id="edit_friend_form">
+        <h2>Edit friend:</h2>
+        <div><input type="text" id="edit_email_id" required="true" placeholder="Email (required)"/></div>
+        <div><input type="text" id="edit_name" required="true" placeholder="Name (optional)"/></div>
+        <input type="hidden" id="original_email_id">
+        <div><input type="button" id="edit_friend" value="Save this friend"/></div>
+      </div>
+
+      <div id="edit_bill_form">
+        <h2>Edit bill:</h2>
+        <div><input type="text" id="edit_total_amount" required="true" placeholder="Total amount of bill (required in numbers)"/></div>
+        <div><textarea rows="4" cols="50" id="edit_description" required="true"  placeholder="Description of bill (required)"></textarea></div>
+        <div><h3>Choose friends to share bill equally:</h3></div>
+        <div id="edit_friend_list"></div>
+        <input type="hidden" id="edit_bill_index">
+        <div><input type="button" id="edit_bill" value="Save this bill"/></div>
+      </div>
+
+      <div id="add_new_friend_form">
+        <h2>Add new friend:</h2>
+        <div><input type="text" id="email_id" required="true" placeholder="Email (required)"/></div>
+        <div><input type="text" id="name" required="true" placeholder="Name (optional)"/></div>
+        <div><input type="button" id="add_new_friend" value="Add this friend"/></div>
+      </div>
+
+      <div id="add_new_bill_form">
+        <h2>Add new bill (first add few friends):</h2>
+        <div><input type="text" id="total_amount" required="true" placeholder="Total amount of bill (required in numbers)"/></div>
+        <div><textarea rows="4" cols="50" id="description" required="true"  placeholder="Description of bill (required)"></textarea></div>
+        <div><h3>Choose friends to share bill equally:</h3></div>
+        <div id="friend_list"></div>
+        <div><input type="button" id="add_new_bill" value="Add this bill"/></div>
+      </div>
+    </body>
+  </html>
+
